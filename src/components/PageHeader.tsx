@@ -1,4 +1,4 @@
-import { Box, Grid2 as Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid2 as Grid, Typography } from "@mui/material";
 
 interface PageHeaderProps {
   heading: string;

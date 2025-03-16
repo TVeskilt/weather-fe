@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { Grid2 as Grid } from "@mui/material";
-import PageHeader from "./PageHeader.tsx";
+import PageHeader from "src/components/PageHeader.tsx";
 
 interface Props extends PropsWithChildren {
   title: string;

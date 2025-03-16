@@ -1,9 +1,9 @@
 import { DataGrid, GridColDef, GridPaginationModel, GridSortModel } from "@mui/x-data-grid";
-import { useCityTemperatures } from "../api/city-temperature";
 import { useEffect, useState } from "react";
-import { CityTemperature } from "../api/city-temperature/types.ts";
 import { Grid2 as Grid } from "@mui/material";
-import { SortDirection } from "../api";
+import { CityTemperature } from "src/api/city-temperature/types.ts";
+import { useCityTemperatures } from "src/api/city-temperature";
+import { SortDirection } from "src/api";
 
 export interface RowState<T> {
   page: number;
@@ -43,7 +43,7 @@ const WeatherTable = () => {
         rowCount: count,
       }));
     }
-  }, [cityTemperatures, isLoading]);
+  }, [cityTemperatures, isLoading, count]);
 
   const columns: GridColDef[] = [
     {
