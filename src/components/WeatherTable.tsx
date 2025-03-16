@@ -1,9 +1,9 @@
 import { DataGrid, GridColDef, GridPaginationModel, GridSortModel } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
 import { Grid2 as Grid } from "@mui/material";
-import { CityTemperature } from "src/api/city-temperature/types.ts";
-import { useCityTemperatures } from "src/api/city-temperature";
-import { SortDirection } from "src/api";
+import { CityTemperature } from "../api/city-temperature/types.ts";
+import { useCityTemperatures } from "../api/city-temperature";
+import { SortDirection } from "../api";
 
 export interface RowState<T> {
   page: number;

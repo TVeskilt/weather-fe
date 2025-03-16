@@ -1,5 +1,5 @@
-import WeatherTable from "src/components/WeatherTable.tsx";
-import Page from "src/components/Page.tsx";
+import Page from "../components/Page.tsx";
+import WeatherTable from "../components/WeatherTable.tsx";
 
 const HomePage = () => {
   return (
